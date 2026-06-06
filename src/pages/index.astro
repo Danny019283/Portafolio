@@ -1,53 +1,70 @@
 ---
 const technologies = [
-	'Astro',
-	'JavaScript',
-	'TypeScript',
-	'HTML',
-	'CSS',
+	'Python',
 	'Git',
+	'GitHub',
+	'OpenCode',
+	'JavaScript',
+	'Java',
+	'SQL',
+	'Docker',
+	'Django',
+	'FastAPI',
 ];
 
 const softSkills = [
-	'Comunicacion efectiva',
+	'Comunicación efectiva',
+	'Aprendizaje rápido',
 	'Trabajo en equipo',
-	'Aprendizaje rapido',
-	'Resolucion de problemas',
+	'Resolución de problemas',
+	'Capacidad de adaptación',
 ];
 
 const education = [
 	{
-		title: 'Nombre de tu carrera o certificacion',
-		place: 'Institucion o centro de estudios',
-		period: '2020 - 2024',
-		description: 'Agrega aqui una breve nota sobre tu formacion, enfoque o logros principales.',
+		title: 'Técnico medio en Redes',
+		place: 'CTP de Rosario de Naranjo',
+		period: '2021',
+		description: 'Formación técnica enfocada en redes y bases para el trabajo con infraestructura tecnológica.',
 	},
 	{
-		title: 'Curso, diplomado o especialidad',
-		place: 'Plataforma o academia',
-		period: '2024',
-		description: 'Puedes usar este espacio para formacion complementaria relevante.',
+		title: 'Ingeniería en Sistemas',
+		place: 'Universidad Nacional de Costa Rica',
+		period: 'En curso',
+		description: 'Actualmente cursando el tercer año, con participación en proyectos académicos y desarrollo de software.',
 	},
 ];
 
 const projects = [
 	{
-		name: 'Proyecto destacado 01',
-		description: 'Describe aqui el problema que resolviste, la tecnologia usada y el impacto del proyecto.',
-		stack: 'Astro · JavaScript · CSS',
-		link: 'https://github.com/tu-usuario/proyecto-1',
+		name: 'AppGPS',
+		description: 'Aplicación en Python orientada a encontrar rutas óptimas entre puntos usando el algoritmo de Dijkstra, simulando la lógica central de un GPS académico e interactivo.',
+		stack: 'Python · Grafos · Dijkstra',
+		link: 'https://github.com/Danny019283/AppGPS',
 	},
 	{
-		name: 'Proyecto destacado 02',
-		description: 'Usa este bloque para mostrar una app, API o sistema que te represente bien.',
-		stack: 'Node.js · SQL · API REST',
-		link: 'https://github.com/tu-usuario/proyecto-2',
+		name: 'Online Chess',
+		description: 'Proyecto de ajedrez online jugador contra jugador con arquitectura separada de cliente y servidor, construido con React y Node.js usando TypeScript y preparado para despliegue con Docker.',
+		stack: 'React · Node.js · TypeScript · Docker',
+		link: 'https://github.com/Danny019283/online-chess',
 	},
 	{
-		name: 'Proyecto destacado 03',
-		description: 'Incluye una descripcion breve y clara para que sea facil de leer por reclutadores.',
-		stack: 'React · Firebase · UI',
-		link: 'https://github.com/tu-usuario/proyecto-3',
+		name: 'Chinesse Checkers',
+		description: 'Juego de damas chinas en Java con multijugador local, enfocado en la lógica del tablero, validación de movimientos y experiencia de juego para varios participantes.',
+		stack: 'Java · Lógica de juego · Multijugador local',
+		link: 'https://github.com/Danny019283/Chinesse-Checkers',
+	},
+	{
+		name: 'GymLab',
+		description: 'Sistema académico desarrollado en Java para el control de rutinas y operaciones relacionadas con un gimnasio, aplicado como proyecto de programación orientado a organización y seguimiento.',
+		stack: 'Java · Gestión de rutinas · Proyecto académico',
+		link: 'https://github.com/Danny019283/GymLab',
+	},
+	{
+		name: 'Control de Productos',
+		description: 'Sistema de inventario en Python para registrar, modificar y eliminar productos, incluyendo control de expiración, cálculo de inversión, ganancias y manejo de IVA por periodos.',
+		stack: 'Python · Inventario · IVA · Expiración',
+		link: 'https://github.com/Danny019283/Control-de-Productos',
 	},
 ];
 ---
@@ -61,9 +78,9 @@ const projects = [
 		<meta name="generator" content={Astro.generator} />
 		<meta
 			name="description"
-			content="Portfolio personal con secciones para presentacion, tecnologias, estudios y proyectos."
+			content="Portafolio de Danny Alfaro Sánchez con perfil, tecnologías, estudios y proyectos destacados."
 		/>
-		<title>Tu Nombre | Portfolio</title>
+		<title>Danny Alfaro Sánchez | Portafolio</title>
 		<style>
 			:root {
 				color-scheme: dark;
@@ -467,7 +484,7 @@ const projects = [
 	<body>
 		<main>
 			<nav class="nav" aria-label="Navegacion principal">
-				<a class="nav__brand" href="#inicio">Tu Portfolio</a>
+				<a class="nav__brand" href="#inicio">Danny Alfaro Sánchez</a>
 				<div class="nav__links">
 					<a href="#sobre-mi">Sobre mi</a>
 					<a href="#tecnologias">Tecnologias</a>
@@ -481,31 +498,30 @@ const projects = [
 				<div class="panel" id="sobre-mi">
 					<span class="eyebrow">Disponible para nuevas oportunidades</span>
 					<h1>
-						Tu nombre,<br />
-						<span class="hero__accent">tu primera gran impresion.</span>
+						Danny Alfaro Sánchez,<br />
+						<span class="hero__accent">desarrollo con enfoque en aprendizaje constante.</span>
 					</h1>
 					<p>
-						Aqui ira tu presentacion principal. Puedes resumir quien eres, que tipo de proyectos te
-						gustan, que valor aportas y por que vale la pena conocerte profesionalmente.
+						Soy estudiante de tercer año Ingeniería en Sistemas en la UNA (Universidad Nacional de Costa Rica), me apasiona aprender nuevas cosas y sobre todo relacionado con la tecnología y programación. Tengo experiencia con muchos proyectos académicos como sistemas de inventarios, reservaciones de hotel, sistemas de control de rutinas de gimnasio entre otros. Actualmente estoy desarrollando un sistema de registro de averías para la Municipalidad de Montes de Oro, Miramar.
 					</p>
 					<div class="actions">
-						<a class="button button--primary" href="https://github.com/tu-usuario" target="_blank" rel="noreferrer">
+						<a class="button button--primary" href="https://github.com/Danny019283/Portafolio" target="_blank" rel="noreferrer">
 							Ver perfil de GitHub
 						</a>
 						<a class="button button--ghost" href="#proyectos">Explorar proyectos</a>
 					</div>
 					<div class="hero__stats">
 						<div class="stat">
-							<strong>+3</strong>
+							<strong>+5</strong>
 							<span>Proyectos para mostrar</span>
 						</div>
 						<div class="stat">
-							<strong>+6</strong>
+							<strong>+10</strong>
 							<span>Tecnologias destacadas</span>
 						</div>
 						<div class="stat">
-							<strong>100%</strong>
-							<span>Personalizable con tu informacion</span>
+							<strong>3er</strong>
+							<span>Año de Ingeniería en Sistemas</span>
 						</div>
 					</div>
 				</div>
@@ -522,9 +538,9 @@ const projects = [
 					</div>
 					<div>
 						<span class="meta">GitHub principal</span>
-						<h2 style="margin: 0 0 0.6rem;">github.com/tu-usuario</h2>
+						<h2 style="margin: 0 0 0.6rem;">Danny019283/Portafolio</h2>
 						<p style="margin: 0; color: var(--muted); line-height: 1.7;">
-							Actualiza este enlace con tu perfil real para que funcione como acceso directo a tu trabajo.
+							Repositorio donde presento este portafolio y centralizo mi trabajo para compartirlo de forma profesional.
 						</p>
 					</div>
 				</aside>
@@ -533,9 +549,9 @@ const projects = [
 			<section class="section" id="tecnologias">
 				<div class="section__heading">
 					<span class="eyebrow">Stack</span>
-					<h2>Tecnologias que puedes destacar</h2>
+					<h2>Tecnologías</h2>
 					<p>
-						Usa esta seccion para listar las herramientas con las que trabajas o que deseas resaltar en tu perfil.
+						Herramientas y tecnologías con las que he trabajado en proyectos académicos y personales.
 					</p>
 				</div>
 				<div class="grid tech-grid">
@@ -548,16 +564,13 @@ const projects = [
 					<span class="eyebrow">Soft skills</span>
 					<h2>Habilidades blandas</h2>
 					<p>
-						Este bloque ayuda a complementar el perfil tecnico con tu forma de trabajar y colaborar con otras personas.
+						Competencias personales que fortalecen mi forma de trabajar y colaborar en equipo.
 					</p>
 				</div>
 				<div class="grid soft-grid">
 					{softSkills.map((skill) => (
 						<article class="soft-card">
 							<h3>{skill}</h3>
-							<p>
-								Agrega aqui una breve frase que explique como aplicas esta habilidad en proyectos o equipos reales.
-							</p>
 						</article>
 					))}
 				</div>
@@ -566,9 +579,9 @@ const projects = [
 			<section class="section" id="estudios">
 				<div class="section__heading">
 					<span class="eyebrow">Formacion</span>
-					<h2>Estudios y preparacion</h2>
+					<h2>Estudios y preparación</h2>
 					<p>
-						Deja aqui tu carrera, certificaciones o cursos importantes para reforzar tu perfil profesional.
+						Base académica y técnica que respalda mi crecimiento en desarrollo de software y tecnología.
 					</p>
 				</div>
 				<div class="grid timeline">
@@ -588,7 +601,7 @@ const projects = [
 					<span class="eyebrow">Portfolio</span>
 					<h2>Proyectos con enlace a GitHub</h2>
 					<p>
-						Cada tarjeta esta pensada para mostrar una descripcion clara, el stack usado y un enlace directo al repositorio.
+						Selección de proyectos académicos y técnicos que reflejan mi interés por la programación, la lógica y la construcción de sistemas útiles.
 					</p>
 				</div>
 				<div class="grid project-grid">
@@ -611,7 +624,7 @@ const projects = [
 			</section>
 
 			<footer class="footer">
-				<p>Plantilla lista para completar con tu informacion real, enlaces e imagen personal.</p>
+				<p>Portafolio personal de Danny Alfaro Sánchez.</p>
 			</footer>
 		</main>
 	</body>
